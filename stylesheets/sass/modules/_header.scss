@@ -1,5 +1,5 @@
 header {
-	height: em(300);
+	height: em(180);
 	width: 100%;
 	background-color: transparentize($charcoal, .6);
 	background-image: url(/assets/images/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg);
@@ -7,14 +7,23 @@ header {
 	background-attachment: fixed;
 	background-position: center center;
 
+	@include media($large-screen) {
+		height: em(300);
+	}
+
 	h1 {
 		@include heading(0);
 		position: relative;
-		bottom: -2.4em;
+		bottom: -2em;
 		color: $mint;
 		text-align: center;
-		font-size: 6em;
+		font-size: 3.5em;
 		line-height: .9em;
 		font-weight: 800;
+
+		@include media($large-screen) {
+			font-size: 6em;
+			bottom: -2.4em;
+		}
 	}
 }

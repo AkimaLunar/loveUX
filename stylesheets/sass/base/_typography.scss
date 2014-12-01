@@ -96,3 +96,20 @@ cite {
   text-transform: uppercase;
   letter-spacing: $letter-spacing;
 }
+
+@mixin logo ($color: $white) {
+  font-weight: 700;
+  border: 4px solid ;
+  margin: em(4) 0;
+  color: $color;
+  display: inline-block;
+  padding: em(4) em(8);
+    
+  @include media($large-screen) {
+    margin: em(8) 0;
+  }
+
+  span {
+    font-weight: 400;
+  }
+}
