@@ -1,0 +1,20 @@
+header {
+	height: em(300);
+	width: 100%;
+	background-color: transparentize($charcoal, .6);
+	background-image: url(/assets/images/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+
+	h1 {
+		@include heading(0);
+		position: relative;
+		bottom: -2.4em;
+		color: $mint;
+		text-align: center;
+		font-size: 6em;
+		line-height: .9em;
+		font-weight: 800;
+	}
+}
