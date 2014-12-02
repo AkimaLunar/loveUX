@@ -1,9 +1,4 @@
 //General Styles
-%section {
-	max-width: em(900);
-	margin: 0 auto;
-}
-
 .intro {
 	@extend %section;
 	padding: em(16);

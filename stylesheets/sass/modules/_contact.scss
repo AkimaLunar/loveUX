@@ -1,0 +1,29 @@
+.contact-form {
+	@extend %section;
+	padding: em(16);
+	padding-top: 0;
+
+	input,
+	textarea {
+		//color: $medium-gray;
+	}
+
+	label {
+		@include heading(0);
+		color: $medium-gray;
+		font-family: $sans-serif-condensed;
+	}
+}
+
+#message {
+	height: em(200);
+}
+
+.contact-form-column {
+	@include media($large-screen) {
+		@include span-columns(6);
+		&:nth-of-type(even) {
+			margin-right: 0;
+		}
+	}
+}
