@@ -1,3 +1,10 @@
+//Includes
+%section {
+	max-width: em(900);
+	margin: 0 auto;
+}
+
+//Styles
 body, html {
 	height: 100%;
 	background: lighten($light-gray, 2%);

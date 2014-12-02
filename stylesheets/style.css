@@ -21,7 +21,7 @@ html {
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #EBBE88;
+  background-color: #88EBCC;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -32,7 +32,7 @@ input[type="submit"] {
   text-decoration: none; }
   button:hover,
   input[type="submit"]:hover {
-    background-color: #e09a47;
+    background-color: #47e0b0;
     color: white; }
   button:disabled,
   input[type="submit"]:disabled {
@@ -83,12 +83,12 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #EBBE88;
+  color: #88EBCC;
   text-decoration: none; }
   a:hover {
-    color: #e09a47; }
+    color: #47e0b0; }
   a:active, a:focus {
-    color: #e09a47;
+    color: #47e0b0;
     outline: none; }
 
 hr {
@@ -153,7 +153,10 @@ select[multiple=multiple] {
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   textarea:hover,
   input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
   select[multiple=multiple]:hover {
@@ -161,8 +164,8 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #EBBE88;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(231, 178, 114, 0.7);
+    border-color: #88EBCC;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(114, 231, 195, 0.7);
     outline: none; }
 
 textarea {
@@ -239,6 +242,10 @@ input[type="submit"] {
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif; }
+
+.intro, .articles, .contact-form {
+  max-width: 56.25em;
+  margin: 0 auto; }
 
 body, html {
   height: 100%;
@@ -414,7 +421,8 @@ header {
   background-image: url(/assets/images/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center; }
+  background-position: center center;
+  padding-top: 1.875em; }
   @media screen and (min-width: 53.75em) {
     header {
       height: 18.75em; } }
@@ -422,7 +430,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 0;
     position: relative;
-    bottom: -2em;
+    bottom: -0.6em;
     color: #88EBCC;
     text-align: center;
     font-size: 3.5em;
@@ -431,17 +439,25 @@ header {
     @media screen and (min-width: 53.75em) {
       header h1 {
         font-size: 6em;
-        bottom: -2.4em; } }
-
-.intro, .articles {
-  max-width: 56.25em;
-  margin: 0 auto; }
+        bottom: -2.1em; } }
+  header img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    height: 7.5em;
+    width: 7.5em; }
+    @media screen and (min-width: 53.75em) {
+      header img {
+        height: 13.75em;
+        width: 13.75em;
+        margin-top: 10px; } }
 
 .intro {
   padding: 1em; }
   @media screen and (min-width: 53.75em) {
     .intro {
-      padding: 2em 0 0 0; } }
+      padding: 2em 1em 0 1em; } }
   .intro p {
     margin: 0;
     padding-bottom: 1em;
@@ -637,5 +653,28 @@ p.important {
   font-weight: 400;
   font-style: italic;
   color: #3B3B45; }
+
+.contact-form {
+  padding: 1em;
+  padding-top: 0; }
+  .contact-form label {
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #848495;
+    font-family: "open-sans-condensed", sans-serif; }
+
+#message {
+  height: 12.5em; }
+
+@media screen and (min-width: 53.75em) {
+  .contact-form-column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .contact-form-column:last-child {
+      margin-right: 0; }
+    .contact-form-column:nth-of-type(even) {
+      margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
