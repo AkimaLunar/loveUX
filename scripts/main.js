@@ -17,13 +17,13 @@ function sideNavigationToggle(){
 			overlay.fadeIn();
 			toggleButton.hide();
 		} else {
-			sideNavigation.animate({left: -sideNavigationWidth}, 400);
+			sideNavigation.animate({left: -sideNavigationWidth}, 300);
 			overlay.fadeOut();
 			toggleButton.delay(300).fadeIn(200);
 		}
 
 		overlay.on('click', function(){
-			sideNavigation.animate({left: -sideNavigationWidth}, 400);
+			sideNavigation.animate({left: -sideNavigationWidth}, 300);
 			sideNavigation.removeClass('open');
 			overlay.fadeOut();
 			toggleButton.delay(300).fadeIn(200);
