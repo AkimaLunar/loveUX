@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ria Carmin -- designed this -- @akimalunar
 
 # THANKS
 
-    <name>
+    Thoughtbot geniuses!
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
+    Bourbon with Bitters & Neat
