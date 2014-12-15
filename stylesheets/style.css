@@ -418,7 +418,7 @@ header {
   height: 11.25em;
   width: 100%;
   background-color: rgba(59, 59, 69, 0.4);
-  background-image: url(/assets/images/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg);
+  background-image: url(../assets/images/bg1.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -471,7 +471,7 @@ header {
 .image-header {
   height: 6.25em;
   width: 100%;
-  background-image: url(/assets/images/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg);
+  background-image: url(../assets/images/bg1.jpg);
   background-size: cover;
   background-position: center center; }
   .image-header h2 {
