@@ -13,17 +13,17 @@ layout: default
 
 </article>
 
-    <section class="articles">
-        <h2>Read Next</h2>
-        {% for post in site.posts limit:4%}
-            {% if post.title == page.title %}
-                <!-- do nothing -->
-            {% else %}
-            <div class="article-list-item">
-                <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{post.title}}</h3></a>
-                <p class="timestamp"><span class="entypo-clock"></span>{{ post.date | date: "%-d of %B, %Y" }}</p>
-                <p class="description">{{ post.excerpt }}</p> 
-            </div>
-            {% endif %}
-        {% endfor %}
-    </section>
+<section class="articles">
+    <h2>Read Next</h2>
+    {% for post in site.posts limit:4%}
+        {% if post.title == page.title %}
+            <!-- do nothing -->
+        {% else %}
+        <div class="article-list-item">
+            <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{post.title}}</h3></a>
+            <p class="timestamp"><span class="entypo-clock"></span>{{ post.date | date: "%-d of %B, %Y" }}</p>
+            <p class="description">{{ post.excerpt }}</p> 
+        </div>
+        {% endif %}
+    {% endfor %}
+</section>
