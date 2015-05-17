@@ -11,7 +11,7 @@ layout: default
 <section class="articles">
     {% for post in site.posts %}       
     <div class="article-list-item-featured">
-        <p class="tag"><a href="strategy.html">{{ post.categories }}</a></p>
+        <p class="tag"><a href="/{{ post.categories[0] }}">{{ post.categories }}</a></p>
         <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
         <p class="timestamp"><span class="entypo-clock"></span>{{ post.date | date: "%-d of %B, %Y" }}</p>
         <p class="description">{{ post.excerpt }}</p> 
