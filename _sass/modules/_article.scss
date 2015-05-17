@@ -168,6 +168,10 @@ article {
 }
 
 p.article-timestamp {
+	span {
+		font-style: normal;
+		margin-right: 8px;
+	}
 	text-align: center;
 	font-style: italic;
 	margin-bottom: 2em;

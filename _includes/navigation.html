@@ -1,0 +1,24 @@
+<!-- Side Navigation: START -->
+<button id="side-navigation-toggle"><span class="entypo-dot-3"></span></button>
+<nav id="side-navigation">
+    <div class="sn-header">
+        <a href="/">
+            <h1><span>love</span>UX</h1>
+        </a>
+        <p>Thoughts and notes on User Experience Design</p>
+    </div>
+
+    <ul class="sn-list tags">
+        {% for category in site.categories %}
+        <li><a href="/{{ category[0] }}" class="entypo-right-open-mini">{{ category[0] }}</a></li>
+        {% endfor %}
+        <li><a href="/" class="entypo-right-open-mini">All</a></li>
+    </ul>
+
+    <ul class="sn-list bottom">
+        <li><a href="{{ "/about.html" | prepend: site.baseurl }}" class="entypo-right-open-mini">About</a></li>
+        <li><a href="{{ "/contact.html" | prepend: site.baseurl }}" class="entypo-right-open-mini">Contacts</a></li>
+    </ul>
+</nav>
+<div id="overlay"></div>
+<!-- Side Navigation: END -->

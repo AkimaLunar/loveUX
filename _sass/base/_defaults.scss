@@ -1,0 +1,27 @@
+.container {
+	padding: 2em;
+
+	li {
+		font-style: italic;
+		margin-left: 1em;
+	}
+}
+
+// 404 Google Search
+#goog-fixurl {
+	border: $base-border;
+	padding: 1em;
+	
+	h3 {
+		font-size: 1.1em;
+		margin-bottom: .5em;
+		@include heading;
+	}
+	b {
+		color: $medium-gray;
+	}
+
+	.search-goog {
+		margin: 0;
+	}
+}
