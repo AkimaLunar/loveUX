@@ -57,7 +57,11 @@ nav {
 	@include media($large-screen) {
 		margin: 2em 0;
 	}
-
+	.copyright {
+		text-align: center;
+		margin: 1em 0 1em 0;
+		color: transparentize(white, .4);
+	}
 	a {	
 		@include heading;
 		font-family: $sans-serif;
