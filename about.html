@@ -2,8 +2,8 @@
 layout: default
 ---
 <!-- Header: START -->
-    <header>
-        <img src="assets/images/avatar.jpg" alt="avatar">
+    <header style="background-image: url(/assets/images/{{ site.data.about['image'] }})">
+        <img src="assets/images/{{ site.data.about['avatar'] }}" alt="avatar">
     </header>
 <!-- Header: END -->
 
@@ -11,9 +11,8 @@ layout: default
 
     <article class="article">
         <h1 class="article-title">About</h1>
-        <p class="article-intro">One of the iconic representations of the digital age is an image of the ubiquitous digital screen, stereotypically represented as a grid of brightly-lit pixels.</p>
+        <p class="article-intro">{{ site.data.about['intro'] }}</p>
     
-        <p>Brownie toffee dragée cotton candy jujubes jelly-o. Jujubes biscuit jelly beans chocolate cake donut danish apple pie. Icing donut cake applicake apple pie marshmallow apple pie icing. Topping powder marshmallow jujubes gummi bears. Gingerbread fruitcake cheesecake. Liquorice sesame snaps jelly beans.</p>
-        <p>Biscuit powder brownie wafer pie marshmallow powder. Topping pudding sweet tootsie roll. Dessert dragée jelly beans tiramisu topping donut croissant. Sesame snaps cheesecake gummi bears candy canes cookie wafer pudding. Bonbon pie tootsie roll cookie dragée. Wafer applicake gummi bears candy chocolate brownie.</p>
+        {{ site.data.about['about'] }}
 
 <!-- Article: END -->
