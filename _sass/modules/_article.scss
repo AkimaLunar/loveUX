@@ -165,6 +165,76 @@ article {
 			font-size: 2em;
 		}
 	}
+
+	ul {
+		list-style:square;
+		color: transparentize($charcoal, 0.2);
+		@include media($large-screen) {
+			font-size: 1.2em;
+			padding-right: em(20);
+			padding-left: em(20);
+			padding-bottom: em(20);
+		}
+	}
+
+	ol {
+		list-style: decimal-leading-zero;
+		color: transparentize($charcoal, 0.2);
+		@include media($large-screen) {
+			font-size: 1.2em;
+			padding-right: em(20);
+			padding-left: em(20);
+			padding-bottom: em(20);
+		}
+	}
+	figure {
+		display: block;
+		@include media($large-screen) {
+			padding: 1.15em;
+		}
+		img {
+			width: 100%;
+		}
+
+		&.figure-2 {
+			@include span-columns(12);
+			@include media($large-screen) {
+				@include span-columns(6);
+				@include omega(2n);
+			}
+		}
+		&.figure-2-centered {
+			@include span-columns(12);
+			@include media($large-screen) {
+				@include span-columns(6);
+				@include shift(3);
+				@include omega(2n);
+			}
+		}
+		&.figure-3 {
+			@include span-columns(12);
+			@include media($large-screen) {
+				@include span-columns(4);
+				@include omega(3n);
+			}
+		}
+		&.figure-4 {
+			@include span-columns(12);
+			@include media($large-screen) {
+				@include span-columns(3);
+				@include omega(4n);
+			}
+		}
+	}
+	figcaption {
+		text-align: center;
+		color: transparentize($charcoal, 0.4);
+		font-size: 1em;
+		font-style: italic;
+	}
+	.figure-container {
+		@include outer-container;
+	}
 }
 
 p.article-timestamp {
@@ -229,5 +299,4 @@ p.important {
 	font-style: italic;
 	color: $charcoal;
 }
-
 
