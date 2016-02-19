@@ -17,7 +17,7 @@ layout: default
             <div class="article-list-item">
                 <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
                 <p class="timestamp"><span class="entypo-clock"></span>{{ post.date | date: "%-d of %B, %Y" }}</p>
-                <p class="description">{{ post.excerpt }}</p> 
+                <p class="description">{{ post.intro }}</p> 
             </div>
             {% endfor %}
     </section>
